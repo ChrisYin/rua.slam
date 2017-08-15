@@ -46,11 +46,7 @@
             android:name="orb.slam2.android.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="landscape" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="orb.slam2.android.DataSetModeActivity"
@@ -58,14 +54,14 @@
             android:screenOrientation="landscape" >
         </activity>
         <activity
-            android:name="orb.slam2.android.CameraModeActivity"
-            android:label="CameraMode"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name="orb.slam2.android.TestModeActivity"
-            android:label="TestMode"
+            android:label="@string/app_name"
             android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="orb.slam2.android.FileChooserActivity"
@@ -74,11 +70,6 @@
         </activity>
         <activity
             android:name="orb.slam2.android.ORBSLAMForDataSetActivity"
-            android:label="ORB_SLAM2"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name="orb.slam2.android.ORBSLAMForCameraActivity"
             android:label="ORB_SLAM2"
             android:screenOrientation="landscape" >
         </activity>

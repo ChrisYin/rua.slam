@@ -38,8 +38,10 @@ public class TestModeActivity extends Activity implements OnClickListener{
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//设置全屏
         setContentView(R.layout.activity_camera_mode);
         ChooseCalibration=(Button)findViewById(R.id.choose_calibration);
+        ChooseCalibration.getBackground().setAlpha(200);
 //        ChooseVOC=(Button)findViewById(R.id.choose_voc);
         finish=(Button)findViewById(R.id.finish);
+        finish.getBackground().setAlpha(200);
         finish.setOnClickListener(this);
         ChooseCalibration.setOnClickListener(this);
 //        ChooseVOC.setOnClickListener(this);
